@@ -17,6 +17,27 @@ const promise = loadStripe(
 );
 
 function App() {
+  // const makeGrid = () => {
+  //   if (window.innerWidth <= 800) {
+  //     // document.querySelector('.home__container').appendChild(  document.getElementsByClassName('product') )
+  //     for (var i = 0; i < document.querySelectorAll(".product").length; i++) {
+  //       document
+  //         .querySelector(".home__container")
+  //         .appendChild(document.querySelectorAll(".product")[i]);
+  //     }
+  //   }
+  // };
+
+  // var elem_p_obj = document.querySelectorAll('.product');
+  // for(var i = 0; i < document.querySelectorAll('.product').length; i++)
+  // {
+  //     document.appendChild(document.querySelectorAll('.product')[i]);
+  // }
+
+  // window.addEventListener("DOMContentLoaded", makeGrid);
+  // window.addEventListener("load", makeGrid);
+  // window.addEventListener("visibilitychange", makeGrid);
+
   const [{}, dispatch] = useStateValue();
 
   // useEffect like a listener, always listening

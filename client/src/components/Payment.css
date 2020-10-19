@@ -59,3 +59,14 @@
   margin-top: 20px;
   padding: 5px 10px;
 } */
+
+@media screen and (max-width: 700px) {
+  .payment__section {
+    flex-direction: column;
+  }
+  .payment__address,
+  .payment__items,
+  .payment__details {
+    margin: 20px;
+  }
+}

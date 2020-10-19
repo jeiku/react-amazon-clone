@@ -20,6 +20,7 @@
   flex: 1;
   align-items: center;
   border-radius: 24px;
+  margin-right: 5px;
 }
 
 .header__searchInput {
@@ -35,6 +36,10 @@
   background-color: #cd9042;
 }
 
+.header__searchIcon:hover {
+  cursor: pointer;
+}
+
 .header__optionLineOne {
   font-size: 10px;
 }
@@ -48,6 +53,14 @@
   display: flex;
   align-items: center;
   color: white;
+  /* margin-top: 10px;
+  margin-left: 5px; */
+  margin-right: 5px;
+  padding: 15px 15px;
+}
+
+.header__optionBasket:hover {
+  background-color: #222b38;
 }
 
 .header__basketCount {
@@ -60,10 +73,88 @@
   justify-content: space-evenly;
 }
 
+.header__menuIcon {
+  display: none;
+  color: white;
+}
+
 .header__option {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
   color: white;
+  padding: 10px 10px;
+}
+
+.header__option:hover {
+  background-color: #222b38;
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    position: relative;
+  }
+
+  .header__logo {
+    width: 50px;
+    object-fit: contain;
+    margin: 0 10px;
+    margin-top: 18px;
+  }
+
+  .header__search {
+    margin-right: 60px;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 350px;
+    position: absolute;
+    top: 60px;
+    left: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    justify-content: unset;
+  }
+
+  .header__nav.active {
+    background-color: #131921;
+    left: 50%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .header__option {
+    text-align: center;
+    padding: 2rem 0;
+    width: 100%;
+    /* display: table; */
+  }
+
+  .header__menuIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 40%);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .header__optionBasket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0;
+  }
+
+  .fa-times {
+    font-size: 1.6rem;
+    transform: translate(-5px);
+  }
 }

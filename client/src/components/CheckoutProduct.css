@@ -6,6 +6,8 @@
 
 .checkoutProduct__info {
   padding-left: 20px;
+
+  text-overflow: ellipsis;
 }
 
 .checkoutProduct__info > button {
@@ -29,4 +31,21 @@
 .checkoutProduct__title {
   font-size: 17px;
   font-weight: 800;
+}
+
+@media screen and (max-width: 700px) {
+  .checkoutProduct__image {
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+  }
+
+  .checkoutProduct__title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .checkoutProduct__info > button {
+    padding: 8px 6px;
+  }
 }

@@ -113,7 +113,7 @@ function Payment() {
         {/* Payment section - Review Items */}
         <div className='payment__section'>
           <div className='payment__title'>
-            <h3>Review items and delivery</h3>
+            <h3>Review Items and Delivery</h3>
           </div>
           <div className='payment__items'>
             {basket.map((item) => (

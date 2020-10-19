@@ -40,6 +40,13 @@
   color: #111;
 }
 
+.product > button:hover {
+  background-color: #f1ca66;
+  border: 1.5px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  cursor: pointer;
+}
+
 .product__price {
   margin-top: 5px;
 }
@@ -47,4 +54,21 @@
 .product__info {
   height: 100px;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 960px) {
+  .product {
+    width: unset;
+  }
+
+  .product__info > p {
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
+  }
+
+  .product > button {
+    padding: 15px 10px;
+  }
 }
